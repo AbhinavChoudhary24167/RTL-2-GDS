@@ -1,0 +1,326 @@
+// Compared points are: Equivalent
+//  (G) + 20   PO   /return_amt[6]
+//  (R) + 20   PO   /return_amt[6]
+add compared points return_amt[6]
+
+// Compared points are: Equivalent
+//  (G) + 21   PO   /return_amt[5]
+//  (R) + 21   PO   /return_amt[5]
+add compared points return_amt[5]
+
+// Compared points are: Equivalent
+//  (G) + 22   PO   /return_amt[4]
+//  (R) + 22   PO   /return_amt[4]
+add compared points return_amt[4]
+
+// Compared points are: Equivalent
+//  (G) + 23   PO   /return_amt[3]
+//  (R) + 23   PO   /return_amt[3]
+add compared points return_amt[3]
+
+// Compared points are: Equivalent
+//  (G) + 24   PO   /return_amt[2]
+//  (R) + 24   PO   /return_amt[2]
+add compared points return_amt[2]
+
+// Compared points are: Equivalent
+//  (G) + 25   PO   /return_amt[1]
+//  (R) + 25   PO   /return_amt[1]
+add compared points return_amt[1]
+
+// Compared points are: Equivalent
+//  (G) + 26   PO   /return_amt[0]
+//  (R) + 26   PO   /return_amt[0]
+add compared points return_amt[0]
+
+// Compared points are: Equivalent
+//  (G) + 27   PO   /print_ticket
+//  (R) + 27   PO   /print_ticket
+add compared points print_ticket
+
+// Compared points are: Equivalent
+//  (G) + 28   PO   /fare[6]
+//  (R) + 28   PO   /fare[6]
+add compared points fare[6]
+
+// Compared points are: Equivalent
+//  (G) + 29   PO   /fare[5]
+//  (R) + 29   PO   /fare[5]
+add compared points fare[5]
+
+// Compared points are: Equivalent
+//  (G) + 30   PO   /fare[4]
+//  (R) + 30   PO   /fare[4]
+add compared points fare[4]
+
+// Compared points are: Equivalent
+//  (G) + 31   PO   /fare[3]
+//  (R) + 31   PO   /fare[3]
+add compared points fare[3]
+
+// Compared points are: Equivalent
+//  (G) + 32   PO   /fare[2]
+//  (R) + 32   PO   /fare[2]
+add compared points fare[2]
+
+// Compared points are: Equivalent
+//  (G) + 33   PO   /fare[1]
+//  (R) + 33   PO   /fare[1]
+add compared points fare[1]
+
+// Compared points are: Equivalent
+//  (G) + 34   PO   /fare[0]
+//  (R) + 34   PO   /fare[0]
+add compared points fare[0]
+
+// Compared points are: Equivalent
+//  (G) + 35   PO   /remaining[6]
+//  (R) + 35   PO   /remaining[6]
+add compared points remaining[6]
+
+// Compared points are: Equivalent
+//  (G) + 36   PO   /remaining[5]
+//  (R) + 36   PO   /remaining[5]
+add compared points remaining[5]
+
+// Compared points are: Equivalent
+//  (G) + 37   PO   /remaining[4]
+//  (R) + 37   PO   /remaining[4]
+add compared points remaining[4]
+
+// Compared points are: Equivalent
+//  (G) + 38   PO   /remaining[3]
+//  (R) + 38   PO   /remaining[3]
+add compared points remaining[3]
+
+// Compared points are: Equivalent
+//  (G) + 39   PO   /remaining[2]
+//  (R) + 39   PO   /remaining[2]
+add compared points remaining[2]
+
+// Compared points are: Equivalent
+//  (G) + 40   PO   /remaining[1]
+//  (R) + 40   PO   /remaining[1]
+add compared points remaining[1]
+
+// Compared points are: Equivalent
+//  (G) + 41   PO   /remaining[0]
+//  (R) + 41   PO   /remaining[0]
+add compared points remaining[0]
+
+// Compared points are: Equivalent
+//  (G) + 42   PO   /state[6]
+//  (R) + 42   PO   /state[6]
+add compared points state[6]
+
+// Compared points are: Equivalent
+//  (G) + 43   PO   /state[5]
+//  (R) + 43   PO   /state[5]
+add compared points state[5]
+
+// Compared points are: Equivalent
+//  (G) + 44   PO   /state[4]
+//  (R) + 44   PO   /state[4]
+add compared points state[4]
+
+// Compared points are: Equivalent
+//  (G) + 45   PO   /state[3]
+//  (R) + 45   PO   /state[3]
+add compared points state[3]
+
+// Compared points are: Equivalent
+//  (G) + 46   PO   /state[2]
+//  (R) + 46   PO   /state[2]
+add compared points state[2]
+
+// Compared points are: Equivalent
+//  (G) + 47   PO   /state[1]
+//  (R) + 47   PO   /state[1]
+add compared points state[1]
+
+// Compared points are: Equivalent
+//  (G) + 48   PO   /state[0]
+//  (R) + 48   PO   /state[0]
+add compared points state[0]
+
+// Compared points are: Equivalent
+//  (G) + 49   DFF  /total_amount_reg[6]
+//  (R) + 81   DFF  /total_amount_reg[6]/U$1/U$1
+add compared points total_amount_reg[6]
+
+// Compared points are: Equivalent
+//  (G) + 50   DFF  /total_amount_reg[5]
+//  (R) + 82   DFF  /total_amount_reg[5]/U$1/U$1
+add compared points total_amount_reg[5]
+
+// Compared points are: Equivalent
+//  (G) + 51   DFF  /total_amount_reg[4]
+//  (R) + 70   DFF  /total_amount_reg[4]/U$1/U$1
+add compared points total_amount_reg[4]
+
+// Compared points are: Equivalent
+//  (G) + 52   DFF  /total_amount_reg[3]
+//  (R) + 80   DFF  /total_amount_reg[3]/U$1/U$1
+add compared points total_amount_reg[3]
+
+// Compared points are: Equivalent
+//  (G) + 53   DFF  /total_amount_reg[2]
+//  (R) + 72   DFF  /total_amount_reg[2]/U$1/U$1
+add compared points total_amount_reg[2]
+
+// Compared points are: Equivalent
+//  (G) + 54   DFF  /total_amount_reg[1]
+//  (R) + 84   DFF  /total_amount_reg[1]/U$1/U$1
+add compared points total_amount_reg[1]
+
+// Compared points are: Equivalent
+//  (G) + 55   DFF  /total_amount_reg[0]
+//  (R) + 83   DFF  /total_amount_reg[0]/U$1/U$1
+add compared points total_amount_reg[0]
+
+// Compared points are: Equivalent
+//  (G) + 56   DFF  /state_reg[6]
+//  (R) + 78   DFF  /state_reg[6]/U$1/U$1
+add compared points state_reg[6]
+
+// Compared points are: Equivalent
+//  (G) + 57   DFF  /state_reg[5]
+//  (R) + 79   DFF  /state_reg[5]/U$1/U$1
+add compared points state_reg[5]
+
+// Compared points are: Equivalent
+//  (G) + 58   DFF  /state_reg[4]
+//  (R) + 71   DFF  /state_reg[4]/U$1/U$1
+add compared points state_reg[4]
+
+// Compared points are: Equivalent
+//  (G) + 59   DFF  /state_reg[3]
+//  (R) + 76   DFF  /state_reg[3]/U$1/U$1
+add compared points state_reg[3]
+
+// Compared points are: Equivalent
+//  (G) + 60   DFF  /state_reg[2]
+//  (R) + 69   DFF  /state_reg[2]/U$1/U$1
+add compared points state_reg[2]
+
+// Compared points are: Equivalent
+//  (G) + 61   DFF  /state_reg[1]
+//  (R) + 77   DFF  /state_reg[1]/U$1/U$1
+add compared points state_reg[1]
+
+// Compared points are: Equivalent
+//  (G) + 62   DFF  /state_reg[0]
+//  (R) + 73   DFF  /state_reg[0]/U$1/U$1
+add compared points state_reg[0]
+
+// Compared points are: Equivalent
+//  (G) + 63   DFF  /remaining_reg[6]
+//  (R) + 63   DFF  /remaining_reg[6]/U$1/U$1
+add compared points remaining_reg[6]
+
+// Compared points are: Equivalent
+//  (G) + 64   DFF  /remaining_reg[5]
+//  (R) + 62   DFF  /remaining_reg[5]/U$1/U$1
+add compared points remaining_reg[5]
+
+// Compared points are: Equivalent
+//  (G) + 65   DFF  /remaining_reg[4]
+//  (R) + 64   DFF  /remaining_reg[4]/U$1/U$1
+add compared points remaining_reg[4]
+
+// Compared points are: Equivalent
+//  (G) + 66   DFF  /remaining_reg[3]
+//  (R) + 65   DFF  /remaining_reg[3]/U$1/U$1
+add compared points remaining_reg[3]
+
+// Compared points are: Equivalent
+//  (G) + 67   DFF  /remaining_reg[2]
+//  (R) + 61   DFF  /remaining_reg[2]/U$1/U$1
+add compared points remaining_reg[2]
+
+// Compared points are: Equivalent
+//  (G) + 68   DFF  /remaining_reg[1]
+//  (R) + 60   DFF  /remaining_reg[1]/U$1/U$1
+add compared points remaining_reg[1]
+
+// Compared points are: Equivalent
+//  (G) + 69   DFF  /remaining_reg[0]
+//  (R) + 66   DFF  /remaining_reg[0]/U$1/U$1
+add compared points remaining_reg[0]
+
+// Compared points are: Equivalent
+//  (G) + 70   DFF  /fare_reg[6]
+//  (R) + 49   DFF  /fare_reg[6]/U$1/U$1
+add compared points fare_reg[6]
+
+// Compared points are: Equivalent
+//  (G) + 71   DFF  /fare_reg[5]
+//  (R) + 50   DFF  /fare_reg[5]/U$1/U$1
+add compared points fare_reg[5]
+
+// Compared points are: Equivalent
+//  (G) + 72   DFF  /fare_reg[4]
+//  (R) + 51   DFF  /fare_reg[4]/U$1/U$1
+add compared points fare_reg[4]
+
+// Compared points are: Equivalent
+//  (G) + 73   DFF  /fare_reg[3]
+//  (R) + 52   DFF  /fare_reg[3]/U$1/U$1
+add compared points fare_reg[3]
+
+// Compared points are: Equivalent
+//  (G) + 74   DFF  /fare_reg[2]
+//  (R) + 53   DFF  /fare_reg[2]/U$1/U$1
+add compared points fare_reg[2]
+
+// Compared points are: Equivalent
+//  (G) + 75   DFF  /fare_reg[1]
+//  (R) + 68   DFF  /fare_reg[1]/U$1/U$1
+add compared points fare_reg[1]
+
+// Compared points are: Equivalent
+//  (G) + 76   DFF  /fare_reg[0]
+//  (R) + 74   DFF  /fare_reg[0]/U$1/U$1
+add compared points fare_reg[0]
+
+// Compared points are: Equivalent
+//  (G) + 77   DFF  /print_ticket_reg
+//  (R) + 75   DFF  /print_ticket_reg/U$1/U$1
+add compared points print_ticket_reg
+
+// Compared points are: Equivalent
+//  (G) + 78   DFF  /return_amt_reg[6]
+//  (R) + 67   DFF  /return_amt_reg[6]/U$1/U$1
+add compared points return_amt_reg[6]
+
+// Compared points are: Equivalent
+//  (G) + 79   DFF  /return_amt_reg[5]
+//  (R) + 59   DFF  /return_amt_reg[5]/U$1/U$1
+add compared points return_amt_reg[5]
+
+// Compared points are: Equivalent
+//  (G) + 80   DFF  /return_amt_reg[4]
+//  (R) + 58   DFF  /return_amt_reg[4]/U$1/U$1
+add compared points return_amt_reg[4]
+
+// Compared points are: Equivalent
+//  (G) + 81   DFF  /return_amt_reg[3]
+//  (R) + 57   DFF  /return_amt_reg[3]/U$1/U$1
+add compared points return_amt_reg[3]
+
+// Compared points are: Equivalent
+//  (G) + 82   DFF  /return_amt_reg[2]
+//  (R) + 56   DFF  /return_amt_reg[2]/U$1/U$1
+add compared points return_amt_reg[2]
+
+// Compared points are: Equivalent
+//  (G) + 83   DFF  /return_amt_reg[1]
+//  (R) + 55   DFF  /return_amt_reg[1]/U$1/U$1
+add compared points return_amt_reg[1]
+
+// Compared points are: Equivalent
+//  (G) + 84   DFF  /return_amt_reg[0]
+//  (R) + 54   DFF  /return_amt_reg[0]/U$1/U$1
+add compared points return_amt_reg[0]
+
+// 65 compared points written

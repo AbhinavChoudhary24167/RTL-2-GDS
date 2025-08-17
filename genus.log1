@@ -1,0 +1,22 @@
+Cadence Genus(TM) Synthesis Solution.
+Copyright 2020 Cadence Design Systems, Inc. All rights reserved worldwide.
+Cadence and the Cadence logo are registered trademarks and Genus is a trademark
+of Cadence Design Systems, Inc. in the United States and other countries.
+
+Version: 19.13-s073_1, built Fri Mar 20 01:36:16 PDT 2020
+Options: -legacy_ui 
+Date:    Mon May 19 15:48:55 2025
+Host:    edatools-server2.iiitd.edu.in (x86_64 w/Linux 2.6.32-754.35.1.el6.x86_64) (18cores*72cpus*2physical cpus*Intel(R) Xeon(R) Gold 6354 CPU @ 3.00GHz 39936KB) (528955884KB)
+PID:     60959
+OS:      Red Hat Enterprise Linux Server release 6.10 (Santiago)
+
+Checking out license: Genus_Synthesis
+
+Loading tool scripts...
+
+Reading GUI preferences file '/home/abhinav24167/.cadence/rc.gui'.
+Finished loading tool scripts (4 seconds elapsed).
+
+WARNING: This version of the tool is 1886 days old.
+legacy_genus:/> source Tight.tcl
+File 'Tight.tcl' does not exist.

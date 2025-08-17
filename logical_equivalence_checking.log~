@@ -1,0 +1,118 @@
+                          CONFORMAL (R)
+                   Version 20.10-p100 (01-May-2020) (64 bit executable)
+   Copyright (c) Cadence Design Systems, Inc., 1997-2019. All Rights Reserved
+
+
+This program is proprietary and confidential information belonging to
+Cadence Design Systems, Inc., and may be used and disclosed only as authorized
+in a license agreement controlling such use and disclosure.
+
+// Warning: This version is 1660 days old. You can download the latest version from http://downloads.cadence.com.
+
+CPU time     : 0.44    seconds
+Elapse time  : 0       seconds
+Memory usage : 252.46  M bytes
+// Command: read library slow.v -verilog -both
+// Parsing file slow.v ...
+// Warning: (RTL7.2) Gate or transistor primitive is using weak attributes (occurrence:1)
+// Warning: (RTL14) Signal has input but it has no output (occurrence:196)
+// Warning: (RTL14.1) Fanout load of the signal is removed (occurrence:84)
+// Warning: (VLG5.2) Primitive input port has multiple bits. Ignore all but LSB bit (occurrence:2)
+// Warning: (DIR6.1) Ignored compiler directive is detected (occurrence:480)
+// Warning: (DIR6.2) Supported compiler directive is detected (occurrence:960)
+// Warning: (HRC1.4) Module/entity is empty (blackboxed) (occurrence:1)
+// Warning: (HRC3.10b) An input port is declared, but it is not used. Module is empty (occurrence:1)
+// Note: Read VERILOG library successfully
+CPU time     : 0.65    seconds
+Elapse time  : 1       seconds
+Memory usage : 274.41  M bytes
+// Command: read design ticket.v -verilog -revised
+// Parsing file ticket.v ...
+// Revised root module is set to 'ticket_machine_fsm'
+// Warning: (RTL1.5b) Potential loss of RHS msb or carry-out bit (occurrence:5)
+// Warning: (RTL2.2) Variable is referenced but never assigned (occurrence:10)
+// Warning: (RTL2.5) Net is referenced without an assignment. Design verification will be based on set_undriven_signal setting (occurrence:70)
+// Warning: (RTL16.1) Non-local variable is read in a function body (occurrence:4)
+// Warning: (RTL16.3) Continuous assignment calls a function with non-local variable reference(s) (occurrence:40)
+// Warning: (RTL25) Non-automatic task/function (occurrence:1)
+// Warning: (IGN1.1) Initial construct is not supported. The entire initial construct will be ignored (occurrence:1)
+// Warning: There are 70 undriven nets in Revised
+// Note: Read VERILOG design successfully
+// Command: read design synthesised_netlist.v -verilog -golden 
+// Parsing file synthesised_netlist.v ...
+// Golden root module is set to 'ticket_machine_fsm'
+// Warning: (RTL2.5) Net is referenced without an assignment. Design verification will be based on set_undriven_signal setting (occurrence:70)
+// Warning: There are 70 undriven nets in Golden
+// Note: Read VERILOG design successfully
+// Command: set system mode lec
+// Processing Golden ...
+// Modeling Golden ...
+// (F32) Created 70 Z gate(s) for floating net(s) and floating pin(s)
+// Processing Revised ...
+// Modeling Revised ...
+// (F32) Created 70 Z gate(s) for floating net(s) and floating pin(s)
+// Mapping key points ...
+================================================================================
+Mapped points: SYSTEM class
+--------------------------------------------------------------------------------
+Mapped points     PI     PO     DFF    Z         Total   
+--------------------------------------------------------------------------------
+Golden            19     29     36     70        154     
+--------------------------------------------------------------------------------
+Revised           19     29     36     70        154     
+================================================================================
+// Command: add compared point -all
+// 65 compared points added to compare list
+// Command: compare
+================================================================================
+Compared points      PO     DFF       Total   
+--------------------------------------------------------------------------------
+Equivalent           29     36        65      
+================================================================================
+// Command: report messages -compare -verb
+// Command: report compare data -noneq
+0 Non-equivalent point(s) reported
+0 compared point(s) reported
+================================================================================
+Compared points      PO     DFF       Total   
+--------------------------------------------------------------------------------
+Equivalent           29     36        65      
+================================================================================
+// Command: report verification
+================================================================================
+                            Verification Report
+--------------------------------------------------------------------------------
+Category                                                                  Count
+--------------------------------------------------------------------------------
+1. Non-standard modeling options used:                                      0
+--------------------------------------------------------------------------------
+2. Incomplete verification:                                                 0
+--------------------------------------------------------------------------------
+3. User modification to design:                                             0
+--------------------------------------------------------------------------------
+4. Conformal Constraint Designer clock domain crossing checks recommended:  0
+--------------------------------------------------------------------------------
+5. Design ambiguity:                                                        0
+--------------------------------------------------------------------------------
+6. Compare Results:                                                        PASS
+================================================================================
+// Command: write compared points -replace lec_compared_points_intermediate
+// Command: write mapped points -replace lec_mapped_points_intermediate
+// Command: set verification information Equivalence_checking
+// Verification information is set to /home/abhinav24167/Desktop/TicketMachine/CEC/Equivalence_checking.
+// Advanced reporting is enabled and the output is written to /home/abhinav24167/Desktop/TicketMachine/CEC/Equivalence_checking
+// Command: write verification information
+// Verification information is written to Equivalence_checking.
+// Command: report gate 904 -Golden -fanin 1 // Gate:904 (Golden)
+================================================================================
+Pin-name  ID (Golden)  Type   Tie   Gate-name (Library: OAI22X1)
+================================================================================
+          904          INV          /g12372/U$4
+------ Fanins ------------------------------------------------------------------
+ 1: 'I'   903          AND          /g12372/U$3
+------ Fanouts -----------------------------------------------------------------
+ 1:       81           DFF          /total_amount_reg[6]/U$1/U$1
+================================================================================
+Fanin cone:
+INV  /g12372/U$4 904
+  AND2  /g12372/U$3 903 ...

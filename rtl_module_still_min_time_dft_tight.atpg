@@ -1,0 +1,135 @@
+STIL 1.0 { Design 2005; } 
+Header {
+    Title "CTL for design 'ticket_machine_fsm'";
+    Date  "Sun Nov 17 14:16:32 +0530 2024";
+    Source "Cadence Design Systems RC v14.10-s022_1 STIL output";
+}
+Signals {
+    "clk" In; "reset" In; "start_station[3]" In;  
+    "start_station[2]" In; "start_station[1]" In; "start_station[0]" In; "dest_station[3]" In;  
+    "dest_station[2]" In; "dest_station[1]" In; "dest_station[0]" In; "amount[6]" In;  
+    "amount[5]" In; "amount[4]" In; "amount[3]" In; "amount[2]" In;  
+    "amount[1]" In; "amount[0]" In; "valid_input" In; "cancel" In;  
+    "scan_en" In; "DFT_sdi_1" In;  
+ 
+    "return_amt[6]" Out; "return_amt[5]" Out; "return_amt[4]" Out;  
+    "return_amt[3]" Out; "return_amt[2]" Out; "return_amt[1]" Out; "return_amt[0]" Out;  
+    "print_ticket" Out; "fare[6]" Out; "fare[5]" Out; "fare[4]" Out;  
+    "fare[3]" Out; "fare[2]" Out; "fare[1]" Out; "fare[0]" Out;  
+    "remaining[6]" Out; "remaining[5]" Out; "remaining[4]" Out; "remaining[3]" Out;  
+    "remaining[2]" Out; "remaining[1]" Out; "remaining[0]" Out; "state[6]" Out;  
+    "state[5]" Out; "state[4]" Out; "state[3]" Out; "state[2]" Out;  
+    "state[1]" Out; "state[0]" Out; "DFT_sdo_1" Out;  
+}
+SignalGroups {
+  // ... no bidirectional signals found
+  "all_inputs" = ' "clk" + "reset" + "start_station[3]" +  
+    "start_station[2]" + "start_station[1]" + "start_station[0]" + "dest_station[3]" +  
+    "dest_station[2]" + "dest_station[1]" + "dest_station[0]" + "amount[6]" +  
+    "amount[5]" + "amount[4]" + "amount[3]" + "amount[2]" +  
+    "amount[1]" + "amount[0]" + "valid_input" + "cancel" +  
+    "scan_en" + "DFT_sdi_1" '; // #signals=21
+  "all_outputs" = ' "return_amt[6]" + "return_amt[5]" + "return_amt[4]" +  
+    "return_amt[3]" + "return_amt[2]" + "return_amt[1]" + "return_amt[0]" +  
+    "print_ticket" + "fare[6]" + "fare[5]" + "fare[4]" +  
+    "fare[3]" + "fare[2]" + "fare[1]" + "fare[0]" +  
+    "remaining[6]" + "remaining[5]" + "remaining[4]" + "remaining[3]" +  
+    "remaining[2]" + "remaining[1]" + "remaining[0]" + "state[6]" +  
+    "state[5]" + "state[4]" + "state[3]" + "state[2]" +  
+    "state[1]" + "state[0]" + "DFT_sdo_1" '; // #signals=30
+  "all_ports" =  ' "all_inputs"+ "all_outputs" '; // #signals=51
+  "_pi" = '"all_inputs"'; // #signals=21
+  "_po" = '"all_outputs"'; // #signals=30
+  "_si" = '"DFT_sdi_1"'; // #signals=1
+  "_so" = '"DFT_sdo_1"'; // #signals=1
+}
+ScanStructures {
+    ScanChain "AutoChain_1" {
+      ScanLength 36;
+     ScanIn "DFT_sdi_1" ; 
+     ScanOut "DFT_sdo_1" ; 
+     ScanEnable "scan_en";
+     ScanMasterClock "clk";
+    }
+}
+Timing {
+    WaveformTable "_default_WFT_" { 
+      Period '50ns';
+      Waveforms {
+       "all_inputs" { 0 {  '0ns' D; } } 
+       "all_inputs" { 1 {  '0ns' U; } } 
+       "all_inputs" { Z {  '0ns' Z; } } 
+       "all_inputs" { N {  '0ns' N; } } 
+       "all_outputs" { X {  '0ns' X; } } 
+       "all_outputs" { H {  '0ns' X; '20ns' H; } } 
+       "all_outputs" { T {  '0ns' X; '20ns' T; } } 
+       "all_outputs" { L {  '0ns' X; '20ns' L; } } 
+       "clk" { P {  '0ns' D; '25ns' U; '45ns' D; } } 
+       "reset" { P {  '0ns' D; '25ns' U; '45ns' D; } } 
+    }
+  }
+}
+//PatternBurst "__burst__" {
+//  PatList {
+//    "__pattern__" {
+//    }
+//  }
+//}
+//PatternExec {
+//    Timing "";
+//    PatternBurst "__burst__";
+//}
+Procedures {
+    "load_unload" {
+        W "_default_WFT_";
+        V {
+          "clk"=0; 
+          "scan_en"=1; 
+          "reset"=0; 
+          }
+        Shift {
+          W "_default_WFT_";
+          V {
+         "_si"=#; "_so"=#;
+            "clk"=P; 
+            "scan_en"=1; 
+            "reset"=0; 
+}
+        }
+    }
+    "capture" {
+        W "_default_WFT_";
+        F { 
+          }
+        V { "_pi"=\r21 #; "_po"=\r30 #; }
+    }
+    "capture_clk" {
+        W "_default_WFT_";
+        F { 
+        }
+        "forcePI": V { "_pi"=\r21 #; }
+        "measurePO": V { "_po"=\r30 #; }
+        "pulse": V { "clk"=P; }
+    }
+    "capture_reset" {
+        W "_default_WFT_";
+        F { 
+        }
+        "forcePI": V { "_pi"=\r21 #; }
+        "measurePO": V { "_po"=\r30 #; }
+        "pulse": V { "reset"=P; }
+    }
+}
+MacroDefs {
+    "test_setup" {
+        W "_default_WFT_";
+        V { 
+            "clk" =0; 
+           }
+      // If required, add your test_controller specific initilization vectors here
+        V { 
+          "clk" =0; 
+          "reset" = 0; 
+        }
+    }
+}

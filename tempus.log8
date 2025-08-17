@@ -1,0 +1,184 @@
+
+Cadence Tempus(TM) Timing Signoff Solution.
+Copyright 2020 Cadence Design Systems, Inc. All rights reserved worldwide.
+
+Version:	v20.10-p003_1, built Wed Apr 29 15:56:37 PDT 2020
+Options:	-nowin -file DFTSTATight.tcl 
+Date:		Thu Nov 14 10:03:46 2024
+Host:		edatools-server2.iiitd.edu.in (x86_64 w/Linux 2.6.32-754.35.1.el6.x86_64) (18cores*72cpus*Intel(R) Xeon(R) Gold 6354 CPU @ 3.00GHz 39936KB)
+OS:		Red Hat Enterprise Linux Server release 6.10 (Santiago)
+
+License:
+		tpsxl	Tempus Timing Signoff Solution XL	20.1	checkout succeeded
+		16 CPU jobs allowed with the current license(s). Use set_multi_cpu_usage to set your required CPU count.
+Change the soft stacksize limit to 0.2%RAM (1033 mbytes). Set global soft_stack_size_limit to change the value.
+environment variable TMPDIR is '/tmp/ssv_tmpdir_20364_JecnMS'.
+#@ Processing -files option
+Sourcing tcl/tk file 'DFTSTATight.tcl' ...
+<CMD> read_lib /home/abhinav24167/Desktop/TicketMachine/lib/90/slow.lib
+<CMD> read_verilog /home/abhinav24167/Desktop/TicketMachine/DFT/dft_report_tight/dft_syn_min_time_dft_tight.v
+<CMD> set_top_module ticket_machine_fsm
+#% Begin Load MMMC data ... (date=11/14 10:03:54, mem=439.4M)
+Number of views requested 1 are allowed with the current licenses... continuing with set_analysis_view.
+#% End Load MMMC data ... (date=11/14 10:03:54, total cpu=0:00:00.0, real=0:00:00.0, peak res=439.6M, current mem=439.6M)
+default_emulate_early_rc_corner default_emulate_late_rc_corner default_emulate_rc_corner
+Loading view definition file from .ssv_emulate_view_definition_20364.tcl
+Reading default_emulate_libset_max timing library '/home/abhinav24167/Desktop/TicketMachine/lib/90/slow.lib' ...
+Read 479 cells in library 'slow' 
+*** End library_loading (cpu=0.01min, real=0.00min, mem=16.0M, fe_cpu=0.13min, fe_real=0.13min, fe_mem=554.1M) ***
+#% Begin Load netlist data ... (date=11/14 10:03:54, mem=444.8M)
+*** Begin netlist parsing (mem=554.1M) ***
+Reading verilog netlist '/home/abhinav24167/Desktop/TicketMachine/DFT/dft_report_tight/dft_syn_min_time_dft_tight.v'
+
+*** Memory Usage v#1 (Current mem = 706.176M, initial mem = 273.305M) ***
+*** End netlist parsing (cpu=0:00:00.1, real=0:00:00.0, mem=706.2M) ***
+#% End Load netlist data ... (date=11/14 10:03:54, total cpu=0:00:00.2, real=0:00:00.0, peak res=549.7M, current mem=541.7M)
+Set top cell to ticket_machine_fsm.
+Starting consistency checks on late and early library sets of delay corner 'default_emulate_delay_corner'
+late library set: default_emulate_libset_max
+early library set: default_emulate_libset_min
+Completed consistency checks. Status: Successful
+Starting consistency checks on late and early library sets of delay corner 'default_emulate_delay_corner'
+late library set: default_emulate_libset_max
+early library set: default_emulate_libset_min
+Completed consistency checks. Status: Successful
+Building hierarchical netlist for Cell ticket_machine_fsm ...
+*** Netlist is unique.
+** info: there are 480 modules.
+** info: there are 391 stdCell insts.
+
+*** Memory Usage v#1 (Current mem = 911.129M, initial mem = 273.305M) ***
+Set Default Net Delay as 1000 ps.
+Set Default Net Load as 0.5 pF. 
+Set Default Input Pin Transition as 0.1 ps.
+/dev/null
+Extraction setup Started 
+Summary of Active RC-Corners : 
+ 
+ Analysis View: default_emulate_view
+    RC-Corner Name        : default_emulate_rc_corner
+    RC-Corner Index       : 0
+    RC-Corner Temperature : 25 Celsius
+    RC-Corner Cap Table   : ''
+    RC-Corner PostRoute Res Factor        : 1
+    RC-Corner PostRoute Cap Factor        : 1
+    RC-Corner PostRoute XCap Factor       : 1
+Starting consistency checks on late and early library sets of delay corner 'default_emulate_delay_corner'
+late library set: default_emulate_libset_max
+early library set: default_emulate_libset_min
+Completed consistency checks. Status: Successful
+Reading timing constraints file '/dev/null' ...
+Current (total cpu=0:00:08.7, real=0:00:09.0, peak res=842.3M, current mem=842.3M)
+Total number of combinational cells: 316
+Total number of sequential cells: 152
+Total number of tristate cells: 10
+Total number of level shifter cells: 0
+Total number of power gating cells: 0
+Total number of isolation cells: 0
+Total number of power switch cells: 0
+Total number of pulse generator cells: 0
+Total number of always on buffers: 0
+Total number of retention cells: 0
+List of usable buffers: BUFX12 BUFX16 BUFX2 BUFX20 BUFX3 BUFX4 BUFX6 BUFX8 CLKBUFX12 CLKBUFX16 CLKBUFX2 CLKBUFX20 CLKBUFX3 CLKBUFX4 CLKBUFX6 CLKBUFX8
+Total number of usable buffers: 16
+List of unusable buffers:
+Total number of unusable buffers: 0
+List of usable inverters: CLKINVX1 CLKINVX12 CLKINVX16 CLKINVX2 CLKINVX20 CLKINVX3 CLKINVX4 CLKINVX6 CLKINVX8 INVX1 INVX12 INVX16 INVX2 INVX20 INVX3 INVX4 INVX6 INVXL INVX8
+Total number of usable inverters: 19
+List of unusable inverters:
+Total number of unusable inverters: 0
+List of identified usable delay cells: DLY1X1 DLY1X4 DLY2X1 DLY2X4 DLY3X1 DLY3X4 DLY4X4 DLY4X1
+Total number of identified usable delay cells: 8
+List of identified unusable delay cells:
+Total number of identified unusable delay cells: 0
+default_emulate_constraint_mode
+Extraction setup Started 
+Summary of Active RC-Corners : 
+ 
+ Analysis View: default_emulate_view
+    RC-Corner Name        : default_emulate_rc_corner
+    RC-Corner Index       : 0
+    RC-Corner Temperature : 125 Celsius
+    RC-Corner Cap Table   : ''
+    RC-Corner PostRoute Res Factor        : 1
+    RC-Corner PostRoute Cap Factor        : 1
+    RC-Corner PostRoute XCap Factor       : 1
+Extraction setup Started 
+Summary of Active RC-Corners : 
+ 
+ Analysis View: default_emulate_view
+    RC-Corner Name        : default_emulate_rc_corner
+    RC-Corner Index       : 0
+    RC-Corner Temperature : 125 Celsius
+    RC-Corner Cap Table   : ''
+    RC-Corner PostRoute Res Factor        : 1
+    RC-Corner PostRoute Cap Factor        : 1
+    RC-Corner PostRoute XCap Factor       : 1
+Extraction setup Started 
+Summary of Active RC-Corners : 
+ 
+ Analysis View: default_emulate_view
+    RC-Corner Name        : default_emulate_rc_corner
+    RC-Corner Index       : 0
+    RC-Corner Temperature : 125 Celsius
+    RC-Corner Cap Table   : ''
+    RC-Corner PostRoute Res Factor        : 1
+    RC-Corner PostRoute Cap Factor        : 1
+    RC-Corner PostRoute XCap Factor       : 1
+default_emulate_libset_max default_emulate_libset_min
+<CMD> read_sdc /home/abhinav24167/Desktop/TicketMachine/DFTSTA/Tight.sdc
+Current (total cpu=0:00:09.0, real=0:00:09.0, peak res=864.7M, current mem=824.7M)
+**WARN: (TCLNL-330):	set_input_delay on clock root 'clk' is not supported. You should use the -source option to set_clock_latency to provide this offset. You can also use the global timing_allow_input_delay_on_clock_source to allow set_input_delay assertion to have an effect on clock source paths beginning at this clock root. (File /home/abhinav24167/Desktop/TicketMachine/DFTSTA/Tight.sdc, Line 5).
+
+**WARN: (TCLCMD-513):	The software could not find a matching object of the specified type for the pattern 'all_outputs' (File /home/abhinav24167/Desktop/TicketMachine/DFTSTA/Tight.sdc, Line 7).
+
+**ERROR: (TCLCMD-917):	Cannot find 'ports' that match 'all_outputs' (File /home/abhinav24167/Desktop/TicketMachine/DFTSTA/Tight.sdc, Line 7).
+
+**ERROR: (TCLCMD-917):	Cannot find 'ports or nets' that match '' (File /home/abhinav24167/Desktop/TicketMachine/DFTSTA/Tight.sdc, Line 7).
+
+INFO (CTE): Reading of timing constraints file /home/abhinav24167/Desktop/TicketMachine/DFTSTA/Tight.sdc completed, with 2 Warnings and 2 Errors.
+Ending "Constraint file reading stats" (total cpu=0:00:00.0, real=0:00:00.0, peak res=842.3M, current mem=842.3M)
+Current (total cpu=0:00:09.0, real=0:00:09.0, peak res=864.7M, current mem=842.3M)
+<CMD> check_timing > $report_dir/check_timing_tight.rpt
+**WARN: (IMPESI-3468):	User needs to specify -equivalent_waveform_model propagation first before specifying -waveform_compression_mode accurate|clock_detailed .
+AAE DB initialization (MEM=1090.88 CPU=0:00:00.0 REAL=0:00:00.0) 
+#################################################################################
+# Design Name: ticket_machine_fsm
+# Design Mode: 65nm
+# Analysis Mode: MMMC OCV 
+# Parasitics Mode: No SPEF/RCDB
+# Signoff Settings: SI Off 
+#################################################################################
+Start delay calculation (fullDC) (1 T). (MEM=946.891)
+/dev/null
+End delay calculation. (MEM=985.184 CPU=0:00:00.1 REAL=0:00:00.0)
+End delay calculation (fullDC). (MEM=977.184 CPU=0:00:00.1 REAL=0:00:00.0)
+<CMD> report_timing > $report_dir/timing_report_tight.rpt
+<CMD> report_timing -retime path_slew_propagation -max_paths 50 -nworst 50 -late -path_type full_clock > $report_dir/pba_min_time_dft_setup.rpt
+INFO: Path Based Analysis (PBA) performed on total '50' paths
+<CMD> report_timing -retime path_slew_propagation -max_paths 50 -nworst 50 -early -path_type full_clock > $report_dir/pba_min_time_dft_hold.rpt
+INFO: Path Based Analysis (PBA) performed on total '50' paths
+<CMD> report_timing -early > $report_dir/timing_report_min_time_dft_hold.rpt
+<CMD> report_timing -late > $report_dir/timing_report_min_time_dft_setup.rpt
+<CMD> report_analysis_coverage > $report_dir/analysis_coverage_tight.rpt
+<CMD> report_analysis_summary > $report_dir/analysis_summary_tight.rpt
+<CMD> report_annotated_parasitics > sta_after_synthesis_tight/reports/annotated_min_area_tight.rpt
+**WARN: (IMPEXT-6165):	Command report_annotated_parasitics is issued before the parasitic data is made available. Parasitic annotation summary will be reported with zero parasitic data. Load the parasitic data for correct annotation report before issuing report_annotated_parasitics.
+<CMD> report_clocks > $report_dir/clocks_tight.rpt
+<CMD> report_case_analysis > $report_dir/case_analysis_tight.rpt
+<CMD> report_constraints -all_violators > sta_after_synthesis_tight/reports/allviolations_tight.rpt
+**ERROR: (UI-93):	couldn't write file "sta_after_synthesis_tight/reports/syn_report_tight/synthesis_area_report.rep": no such file or directory
+
+*** Memory Usage v#1 (Current mem = 954.059M, initial mem = 273.305M) ***
+
+*** Summary of all messages that are not suppressed in this session:
+Severity  ID               Count  Summary                                  
+WARNING   IMPEXT-6165          1  Command report_annotated_parasitics is i...
+ERROR     UI-93                1  %s                                       
+WARNING   IMPESI-3468          1  User needs to specify -equivalent_wavefo...
+WARNING   TCLCMD-513           1  The software could not find a matching o...
+ERROR     TCLCMD-917           2  Cannot find '%s' that match '%s'         
+WARNING   TCLNL-330            1  set_input_delay on clock root '%s' is no...
+*** Message Summary: 4 warning(s), 3 error(s)
+
+--- Ending "Tempus Timing Signoff Solution" (totcpu=0:00:10.1, real=0:09:18, mem=954.1M) ---
