@@ -4,18 +4,15 @@ Cadence and the Cadence logo are registered trademarks and Genus is a trademark
 of Cadence Design Systems, Inc. in the United States and other countries.
 
 Version: 19.13-s073_1, built Fri Mar 20 01:36:16 PDT 2020
-Options: -legacy_ui 
-Date:    Sun Nov 17 13:36:22 2024
+Options: Tight.tcl 
+Date:    Mon May 19 15:50:38 2025
 Host:    edatools-server2.iiitd.edu.in (x86_64 w/Linux 2.6.32-754.35.1.el6.x86_64) (18cores*72cpus*2physical cpus*Intel(R) Xeon(R) Gold 6354 CPU @ 3.00GHz 39936KB) (528955884KB)
-PID:     32009
+PID:     61804
 OS:      Red Hat Enterprise Linux Server release 6.10 (Santiago)
 
 Checking out license: Genus_Synthesis
-
-Loading tool scripts...
-
-Reading GUI preferences file '/home/abhinav24167/.cadence/rc.gui'.
-Finished loading tool scripts (5 seconds elapsed).
-
-WARNING: This version of the tool is 1702 days old.
-legacy_genus:/> rc -bg -files Intermediate.tcl
+invalid command name "set_attr"
+    while executing
+"set_attr lib_search_path /home/abhinav24167/Desktop/TicketMachine/lib/90"
+    (file "Tight.tcl" line 2)
+Abnormal exit.

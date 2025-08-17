@@ -1,4 +1,4 @@
-create_clock -name clk -period 4.22[get_ports "clk"]
+create_clock -name clk -period 9.25[get_ports "clk"]
 set_clock_transition -rise 0.4 [get_clocks "clk"]
 set_clock_transition -fall 0.4[get_clocks "clk"]
 

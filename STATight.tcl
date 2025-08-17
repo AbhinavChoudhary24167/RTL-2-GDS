@@ -1,0 +1,24 @@
+# Create directory for reports
+file mkdir sta_after_synthesis_tight/reports
+set report_dir sta_after_synthesis_tight/reports
+
+# Read library and netlist
+read_lib /home/abhinav24167/Desktop/TicketMachine/lib/90/slow.lib
+read_verilog /home/abhinav24167/Desktop/TicketMachine/Synthesis/syn_report_tight/synthesised_netlist.v
+set_top_module ticket_machine_fsm
+
+# Read constraints
+read_sdc /home/abhinav24167/Desktop/TicketMachine/STA/Tight.sdc
+
+# Generate reports
+check_timing > $report_dir/check_timing_tight.rpt
+report_timing > $report_dir/timing_report_tight.rpt
+report_timing -retime path_slew_propagation -max_paths 50 -nworst 50 -path_type full_clock > $report_dir/pba_tight.rpt
+report_analysis_coverage > $report_dir/analysis_coverage_tight.rpt
+report_analysis_summary > $report_dir/analysis_summary_tight.rpt
+report_annotated_parasitics > $report_dir/annotated_min_area_tight.rpt
+report_clocks > $report_dir/clocks_tight.rpt
+report_case_analysis > $report_dir/case_analysis_tight.rpt
+report_constraints -all_violators > $report_dir/allviolations_tight.rpt
+
+

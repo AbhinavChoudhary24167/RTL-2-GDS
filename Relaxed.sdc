@@ -1,7 +1,11 @@
-create_clock -name clk -period 9.25 [get_ports clk]
-set_clock_transition -rise 0.1 [get_clocks clk]
-set_clock_transition -fall 0.1 [get_clocks clk]
-set_clock_uncertainty 0.1 [get_clocks clk]
-set_input_delay -clock [get_clocks clk] 1.5 [all_inputs]
-set_output_delay -clock [get_clocks clk] 0.05 [all_outputs]
+create_clock -name clk -period 9.25 [get_ports "clk"]
+set_clock_transition -rise 0.4 [get_clocks "clk"]
+set_clock_transition -fall 0.4[get_clocks "clk"]
+
+set_input_transition -rise 0.2 [all_inputs]
+set_input_transition -fall 0.2 [all_inputs]
+synthesize -effort high -directive AreaOptimizedHigh
+set_load 0.5 [all_outputs]
+set_input_delay -clock [get_clocks "clk"] 3 [all_inputs]
+set_output_delay -clock [get_clocks "clk"] 3 [all_outputs]
 

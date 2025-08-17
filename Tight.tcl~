@@ -1,0 +1,18 @@
+set report_dir syn_report_tight/reports
+set_attr lib_search_path /home/abhinav24167/Desktop/TicketMachine/lib/90
+set_attr hdl_search_path ./
+set_attr library slow.lib
+read_hdl ticket.v
+elaborate ticket_machine_fsm
+read_sdc ./Tight.sdc
+synthesize -to_mapped -effort medium
+write_sdf -timescale ns -nonegchecks -recrem split -edges check_edge > syn_report/delays.sdf
+write_hdl > syn_report/synthesised_netlist.v
+write_sdc > syn_report/dc_file_for_physical_design.sdc
+write_script > syn_report_tight/synthesis_script_sdc.g
+report timing > syn_report_tight/synthesis_timing_report.rep
+report power > syn_report_tight/synthesis_power_report.rep
+report gates > syn_report_tight/synthesis_cell_report.rep
+report area > syn_report_tight/synthesis_area_report.rep
+gui_show
+
